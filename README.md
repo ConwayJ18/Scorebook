@@ -17,7 +17,7 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
    - Find a Brewers game and click on "Play by Play" at the top of the page
    - Under "Share & Export", select "Get table as CSV (for Excel)"
    - Copy and paste the CSV data into a text file
-   - Save the file as `input.txt` in the same directory as `Scorebook.py` (sample provided: [April 20, 2025 game versus ATH](https://www.baseball-reference.com/boxes/MIL/MIL202504200.shtml#all_play_by_play))
+   - Save the file as `scorebook_input.txt` in the same directory as `Scorebook.py` (sample provided: [April 20, 2025 game versus ATH](https://www.baseball-reference.com/boxes/MIL/MIL202504200.shtml#all_play_by_play))
 
 2. **Run the Script:**
    - Open a terminal in the script directory
@@ -25,7 +25,7 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
      ```
      python Scorebook.py
      ```
-   - The script will process `input.txt` and print a summary table
+   - The script will process `scorebook_input.txt` and print a summary table
    - The TSV output will also be copied to your clipboard (on macOS and Windows) for easy copying into a spreadsheet
 
 ## Requirements
