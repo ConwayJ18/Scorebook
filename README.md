@@ -25,12 +25,11 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
      python Scorebook.py
      ```
    - The script will process `input.txt` and print a summary table
-   - The TSV output will also be copied to your clipboard (on macOS and Windows)
+   - The TSV output will also be copied to your clipboard (on macOS and Windows) for easy copying into a spreadsheet
 
 ## Requirements
 - Python 3.7+
 - [tabulate](https://pypi.org/project/tabulate/) Python package
-- Only parses Milwaukee Brewers games
 
 Install tabulate with:
 ```
@@ -42,7 +41,8 @@ pip install tabulate
   ```
   Inn,Score,Out,RoB,Pit(cnt),R/O,@Bat,Batter,Pitcher,wWPA,wWE,Play Description
   ```
-- Only rows where `@Bat` is `MIL` are included in the output.
+- Only parses Milwaukee Brewers games
+- Only Milwaukee Brewers plate appearances are included in the output.
 - The script is designed for use with CSVs from Baseball-Reference.com only.
 
 ## Author
