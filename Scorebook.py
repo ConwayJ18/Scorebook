@@ -25,7 +25,15 @@ import sys
 import csv
 import platform
 import subprocess
-from tabulate import tabulate
+
+try:
+    from tabulate import tabulate
+except ImportError:
+    import subprocess
+    import sys
+    print("tabulate not found. Installing tabulate...")
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tabulate'])
+    from tabulate import tabulate
 
 # --- Scorebook Conversion Functions ---
 def score_unassisted(desc):
