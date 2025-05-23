@@ -76,8 +76,11 @@ def to_scorebook(desc):
 HEADER = "Inn,Score,Out,RoB,Pit(cnt),R/O,@Bat,Batter,Pitcher,wWPA,wWE,Play Description"
 
 # --- Input and Pinch Hitter Mapping ---
-print("Paste CSV data from Baseball Reference below. Press Ctrl-D (or Ctrl-Z on Windows) when done:")
-input_lines = sys.stdin.read().splitlines()
+def get_input_lines():
+    with open('input.txt', encoding='utf-8') as f:
+        return [line.strip() for line in f if line.strip()]
+
+input_lines = get_input_lines()
 
 # Map pinch hitters to original batters
 pinch_map = {}
