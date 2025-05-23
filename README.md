@@ -6,6 +6,7 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
 - Handles pinch hitters by mapping them to original batters
 - Uses scorebook shorthand for play descriptions (e.g., 1B, K, GDP)
 - Tracks RBIs, stolen bases, and caught stealing events
+- Multiple plate appearances in a single inning are separated by semicolon
 - Outputs a table with batters as rows and innings as columns
 - Copies the TSV output to your clipboard (macOS and Windows)
 
@@ -16,7 +17,7 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
    - Find a Brewers game and click on "Play by Play" at the top of the page
    - Under "Share & Export", select "Get table as CSV (for Excel)"
    - Copy and paste the CSV data into a text file
-   - Save the file as `input.txt` in the same directory as `Scorebook.py`
+   - Save the file as `input.txt` in the same directory as `Scorebook.py` (sample provided: [April 20, 2025 game versus ATH](https://www.baseball-reference.com/boxes/MIL/MIL202504200.shtml#all_play_by_play))
 
 2. **Run the Script:**
    - Open a terminal in the script directory
