@@ -16,13 +16,13 @@ This script processes play-by-play CSV data exported from [Baseball-Reference.co
    - Find a Brewers game and click on "Play by Play" at the top of the page
    - Under "Share & Export", select "Get table as CSV (for Excel)"
    - Copy and paste the CSV data into a text file
-   - Save the file as `input.txt` in the same directory as `Main.py`
+   - Save the file as `input.txt` in the same directory as `Scorebook.py`
 
 2. **Run the Script:**
    - Open a terminal in the script directory
    - Run:
      ```
-     python Main.py
+     python Scorebook.py
      ```
    - The script will process `input.txt` and print a summary table
    - The TSV output will also be copied to your clipboard (on macOS and Windows)

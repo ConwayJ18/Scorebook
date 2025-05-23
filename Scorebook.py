@@ -1,4 +1,4 @@
-# Main.py - Baseball Scorebook CSV Parser and Tabulator
+# Scorekeeper.py - Baseball Scorebook CSV Parser and Tabulator
 #
 # This script reads play-by-play CSV data (NOTE: Must be from Baseball-Reference.com), processes it to extract and summarize play descriptions for each batter and inning, and outputs a tabular summary.
 # - To create a CSV file:
