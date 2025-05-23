@@ -195,3 +195,5 @@ elif platform.system() == "Windows":
     print("Output copied to clipboard (Windows).")
 else:
     print("Could not copy to clipboard. Please copy manually.")
+
+input("\nPress Enter to exit...")
