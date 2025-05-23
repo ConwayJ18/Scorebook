@@ -84,7 +84,7 @@ HEADER = "Inn,Score,Out,RoB,Pit(cnt),R/O,@Bat,Batter,Pitcher,wWPA,wWE,Play Descr
 
 # --- Input and Pinch Hitter Mapping ---
 def get_input_lines():
-    with open('input.txt', encoding='utf-8') as f:
+    with open('scorebook_input.txt', encoding='utf-8') as f:
         return [line.strip() for line in f if line.strip()]
 
 input_lines = get_input_lines()
