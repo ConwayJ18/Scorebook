@@ -1,6 +1,13 @@
 # Main.py - Baseball Scorebook CSV Parser and Tabulator
 #
-# This script reads play-by-play CSV data (e.g., from MLB Gameday), processes it to extract and summarize play descriptions for each batter and inning, and outputs a tabular summary.
+# This script reads play-by-play CSV data (NOTE: Must be from Baseball-Reference.com), processes it to extract and summarize play descriptions for each batter and inning, and outputs a tabular summary.
+# - To create a CSV file:
+#   - Go to Baseball Reference
+#   - Find a Milwaukee Brewers game (script only parses Brewers games)
+#   - Click on "Play by Play" at the top of the page.
+#   - Under "Share & Export", select "Get table as CSV (for Excel)
+#   - Copy & paste into a text file
+#   - Save it as "input.txt" in the same directory as this script.
 #
 # Features:
 # - Handles pinch hitters by mapping them to original batters.
