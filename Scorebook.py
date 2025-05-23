@@ -33,6 +33,9 @@ except ImportError:
     import sys
     print("tabulate not found. Installing tabulate...")
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tabulate'])
+    # Remove tabulate from sys.modules to force re-import
+    if 'tabulate' in sys.modules:
+        del sys.modules['tabulate']
     from tabulate import tabulate
 
 # --- Scorebook Conversion Functions ---
